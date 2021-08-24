@@ -1,0 +1,17 @@
+<header>
+  <a href="/" class="logo">pawelcebula.com</a>
+  <nav class="nav">
+    <div class="nav__internal">
+      {% for item in navigation.internal %}
+        <a href="{{ item.url }}">{{ item.name }}</a>
+      {% endfor %}
+    </div>
+    <div class="nav__external">
+      {% for item in navigation.external %}
+        <a href="{{ item.url }}">
+          {% include 'svg/' + item.icon + '.svg' %}
+        </a>
+      {% endfor %}
+    </div>
+  </nav>
+</header>

@@ -1,0 +1,16 @@
+{% extends 'base.njk' %}
+
+{% block main %}
+  <h1>Contact</h1>
+  <h2>You can fine me online at</h2>
+  <ul>
+    {% for contact in contacts %}
+      <li>
+        <a href="{{ contact.url }}">
+          {% include 'svg/' + contact.icon + '.svg' %}
+          {{ contact.prompt }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock main %}

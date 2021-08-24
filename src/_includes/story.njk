@@ -1,0 +1,12 @@
+<div>
+  <h2>My Story</h2>
+  {% for period in story %}
+    <div>
+      <h3>{{ period.name }}</h3>
+      <span>{{ period.from }} - {{ period.to }}</span>
+      {% for p in period.description %}
+        <p>{{ p }}</p>
+      {% endfor %}
+    </div>
+  {% endfor %}
+</div>

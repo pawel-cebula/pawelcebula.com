@@ -1,0 +1,9 @@
+<div class="features">
+  {% for feat in features %}
+    <div class="features__item">
+      {% include 'svg/' + feat.icon + '.svg' %}
+      <h3>{{ feat.name }}</h3>
+      <p>{{ feat.description }}</p>
+    </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,38 @@
+{
+ "internal": [
+   {
+     "name": "Home",
+     "url": "/"
+   },
+   {
+    "name": "About",
+    "url": "/about/"
+  },
+  {
+    "name": "Projects",
+    "url": "/projects/"
+  },
+  {
+    "name": "Posts",
+    "url": "/posts/"
+  },
+  {
+    "name": "Contact",
+    "url": "/contact/"
+  }
+ ],
+ "external": [
+   {
+     "icon": "github",
+     "url": "https://github.com/pawel-123"
+   },
+   {
+    "icon": "linkedin",
+    "url": "https://www.linkedin.com/in/pawel-cebula87/"
+  },
+  {
+    "icon": "twitter",
+    "url": "https://twitter.com/pawelceb"
+  }
+ ]
+}

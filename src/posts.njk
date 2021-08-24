@@ -1,0 +1,15 @@
+{% extends 'base.njk' %}
+
+{% block main %}
+  <h1>Posts</h1>
+  <section>
+    {% for post in collections.posts | reverse %}
+      <article>
+        <a href="/posts/{{ post.data.title | slug }}"><h2>{{ post.data.title }}</h2></a>
+        <p>Posted on: {{ post.data.date }}</p>
+        <p>{{ post.data.description }}</p>
+        <a href="">Read more</a>
+      </article>
+    {% endfor %}
+  </section>
+{% endblock main %}
