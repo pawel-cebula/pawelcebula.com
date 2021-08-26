@@ -1,27 +1,30 @@
 <header>
-  <a href="/" class="logo">pawelcebula.com</a>
-  <nav class="nav">
-    <button class="nav__toggle">
-      <span class="nav__toggle__menu">
-        {% include 'svg/menu.svg' %}
-      </span>
-      <span class="nav__toggle__close">
-        {% include 'svg/close.svg' %}
-      </span>      
-    </button>
-    <div class="nav__internal">
-      {% for item in navigation.internal %}
-        <a href="{{ item.url }}">{{ item.name }}</a>
-      {% endfor %}
-    </div>
-    <div class="nav__external">
-      {% for item in navigation.external %}
-        <a href="{{ item.url }}">
-          {% include 'svg/' + item.icon + '.svg' %}
-        </a>
-      {% endfor %}
-    </div>
-  </nav>
+  <div class="wrapper">
+    <a href="/" class="logo">pawelcebula.com</a>
+    <nav class="nav">
+      <button class="nav__toggle">
+        <span class="nav__toggle__menu">
+          {% include 'svg/menu.svg' %}
+        </span>
+        <span class="nav__toggle__close">
+          {% include 'svg/close.svg' %}
+        </span>      
+      </button>
+      <div class="nav__internal">
+        {% for item in navigation.internal %}
+          <a href="{{ item.url }}">{{ item.name }}</a>
+        {% endfor %}
+      </div>
+      <div class="nav__external">
+        {% for item in navigation.external %}
+          <a href="{{ item.url }}">
+            {% include 'svg/' + item.icon + '.svg' %}
+          </a>
+        {% endfor %}
+      </div>
+    </nav>
+  </div>
+
   <script type="text/javascript">
     (function () {
       const navToggle = document.querySelector(".nav__toggle");

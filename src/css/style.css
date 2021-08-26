@@ -8,8 +8,14 @@
   --gray30: #3F3F3F;
   --gray20: #707070;
   --gray10: #c5c5c5;
-  --yellow: #FFDF6C;
-  --white: #FFFFFF;
+  /* --yellow: #FFDF6C; */
+  /* --white: #FFFFFF; */
+
+  --white: #F7F6F5;
+  --yellow: #E4AD68;
+  --lightblue: #8DA6B9;
+  --maroon: #B35964;
+  --darkblue: #3E5991;
 }
 
 *,
@@ -45,10 +51,6 @@ body {
   color: var(--gray30);
 }
 
-main > * {
-  margin: 0 2em;
-}
-
 h1 {
   border-bottom: 1px solid var(--gray10);
   padding-bottom: 0.3em;
@@ -61,7 +63,6 @@ a {
 
 img {
   max-width: 100%;
-  /* display: block; */
 }
 
 input,
@@ -76,11 +77,16 @@ svg {
 }
 
 .container {
-  max-width: 1080px;
   min-height: 100vh;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
+}
+
+.wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 2em;
+  border: 1px solid red;
 }
 
 .list-reset {
@@ -99,14 +105,19 @@ svg {
 
 /* header */
 
-header {
+/* header {
+  display: flex;
+  justify-content: space-between;
+} */
+
+header > .wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .logo {
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
   align-self: flex-start;
   font-size: 1.5em;
   font-weight: 500;
@@ -221,6 +232,11 @@ footer {
 
 .bio p {
   margin-top: 1em;
+}
+
+.bio__photo {
+  max-height: 50vh;
+  overflow: hidden;
 }
 
 .period {
@@ -357,6 +373,21 @@ footer {
 
   .features__item {
     flex-basis: 50%;
+    padding: 0.5em 2em;
+  }
+
+  .bio {
+    display: flex;
+  }
+
+  .bio__photo img {
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid blue;
+  }
+
+  .bio__text {
+    padding-left: 1em;
   }
 
   .stacks {
@@ -374,33 +405,29 @@ footer {
   .project__image {
     flex-basis: 50%;
     max-height: 50vh;
-    /* flex: 1 1 45%; */
     border: 1px solid red;
     margin: 0;
   }
 
   .project__image > img {
     width: 100%;
-    /* object-fit: contain; */
     object-position: top left;
   }
 
   .project__info {
     flex-basis: 50%;
-    /* flex: 1 1 55%; */
     padding-left: 1em;
   }
 }
 
 @media (min-width: 64em) {
-  header {
+  header > .wrapper {
     flex-direction: row;
   }
 
   .nav {
     display: flex;
     align-items: center;
-    margin-right: 2em;
   }
   
   .nav__toggle {
@@ -413,6 +440,7 @@ footer {
 
   .nav .nav__external {
     display: flex;
+    padding: 0.5em 0;
   }
   
   .nav__internal > a {
@@ -422,22 +450,8 @@ footer {
   }
 
   .features__item {
-    width: 25%;
+    flex-basis: 25%;
     padding: 0.5em 1em;
-  }
-
-  .bio {
-    display: flex;
-  }
-
-  .bio img {
-    height: 100%;
-    object-fit: cover;
-    border: 1px solid blue;
-  }
-
-  .bio__text {
-    padding-left: 1em;
   }
 
   .periods {
