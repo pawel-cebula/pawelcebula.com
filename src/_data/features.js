@@ -1,13 +1,13 @@
 module.exports = [
   {
     icon: 'dev',
-    name: 'I\'m a Full-Stack Web Developer',
-    description: 'I typically work with HTML, CSS, JavaScript (React, Node, Express), PostgreSQL and MongoDB. I\'m also familiar with TypeScript, GraphQL, Vue, CI/CD, Python and Django.'
+    name: 'I\'m a Web Developer',
+    description: 'I typically work with HTML, CSS, JavaScript (React, Node, Express), PostgreSQL and MongoDB.'
   },
   {
     icon: 'world',
-    name: 'I live in Berlin, Germany',
-    description: 'I was born in Poland, studied in the UK, Netherlands and Hong Kong, and worked in China before moving to Germany in 2013.'
+    name: 'I live in Berlin',
+    description: 'I was born in Poland, studied in the UK, Netherlands and Hong Kong, before moving to Germany.'
   },
   {
     icon: 'health',
@@ -17,6 +17,6 @@ module.exports = [
   {
     icon: 'hobbies',
     name: 'I\'m into a lot of things',
-    description: 'I love sports, traveling, reading, podcasts, good food, craft beer, coffee, not sure in which order.'
+    description: 'I love sports, traveling, reading, podcasts, good food, craft beer, coffee, in varying order.'
   }
 ]

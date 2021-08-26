@@ -1,6 +1,6 @@
 module.exports = [
   {
-    name: "untappd-compare (API & SSR app)",
+    name: "untappd-compare (API & SSR)",
     url: "https://untappdcompare.com",
     github: "https://github.com/pawel-123/untappd-compare",
     description: [
@@ -23,7 +23,7 @@ module.exports = [
   },
   {
     name: "Marident",
-    url: "",
+    url: "https://marident.herokuapp.com",
     github: "",
     description: [
       "Marident is a simple website for a dental clinic with a contact form that sends requests via email. It was one of my first projects, built when I was learning Django, which was definitely an overkill considering it is just a static website.",

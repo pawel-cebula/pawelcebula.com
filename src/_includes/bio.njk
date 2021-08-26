@@ -1,5 +1,10 @@
-<div>
-  {% for p in bio %}
-    <p>{{ p }}</p>
-  {% endfor %}
+<div class="bio">
+  <div class="bio__photo">
+    <img src="/assets/pawel.jpg" alt="Pawel Cebula profile photo">
+  </div>
+  <div class="bio__text">
+    {% for p in bio %}
+      <p>{{ p }}</p>
+    {% endfor %}    
+  </div>
 </div>

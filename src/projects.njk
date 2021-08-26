@@ -1,31 +1,38 @@
 {% extends 'base.njk' %}
 
 {% block main %}
-  <h1>Sample Projects</h1>
   <div>
-    {% for project in projects %}
-      <div>
-        <img src="{{ project.image }}" alt="{{ project.name}} project image" style="max-width: 100%;">
-        <h2>{{ project.name }}</h2>
-        {% if project.url %}
-          <a href="{{ project.url }}">{{ project.url }}</a>
-        {% else %}
-          <span>n/a</span>
-        {% endif %}
-        <a href="{{ project.github }}">
-          {% include 'svg/github.svg' %}
-        </a>
-        <div>
-          {% for tech in project.stack %}
-            <span>{{ tech }}</span>
-          {% endfor %}
+    <h1>Sample Projects</h1>
+    <div class="projects">
+      {% for project in projects %}
+        <div class="project">
+          <div class="project__image">
+            <img src="{{ project.image }}" alt="{{ project.name}} project image">
+          </div>
+          <div class="project__info">
+            <h2>{{ project.name }}</h2>
+            <a href="{{ project.github }}" class="project__git">
+              {% include 'svg/github.svg' %}
+            </a>
+            {% if project.url %}
+              <a href="{{ project.url }}" class="project__url">{{ project.url }}</a>
+            {% else %}
+              <p>n/a</p>
+            {% endif %}
+            <ul class="list-reset">
+              {% for tech in project.stack %}
+                <li class="list-tag">{{ tech }}</li>
+              {% endfor %}
+            </ul>
+            <div class="project__description">
+              {% for p in project.description %}
+                <p>{{ p }}</p>
+              {% endfor %}
+            </div>
+          </div>
+          
         </div>
-        <div>
-          {% for p in project.description %}
-            <p>{{ p }}</p>
-          {% endfor %}
-        </div>
-      </div>
-    {% endfor %}
+      {% endfor %}
+    </div>
   </div>
 {% endblock main %}

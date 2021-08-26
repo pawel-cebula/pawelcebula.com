@@ -1,6 +1,14 @@
 <header>
   <a href="/" class="logo">pawelcebula.com</a>
   <nav class="nav">
+    <button class="nav__toggle">
+      <span class="nav__toggle__menu">
+        {% include 'svg/menu.svg' %}
+      </span>
+      <span class="nav__toggle__close">
+        {% include 'svg/close.svg' %}
+      </span>      
+    </button>
     <div class="nav__internal">
       {% for item in navigation.internal %}
         <a href="{{ item.url }}">{{ item.name }}</a>
@@ -14,4 +22,14 @@
       {% endfor %}
     </div>
   </nav>
+  <script type="text/javascript">
+    (function () {
+      const navToggle = document.querySelector(".nav__toggle");
+      navToggle.addEventListener("click", function(event) {
+        event.preventDefault();
+        const nav = document.querySelector(".nav");
+        nav.classList.toggle("is-open");
+      });    
+    })();
+  </script>
 </header>

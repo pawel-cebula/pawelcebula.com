@@ -1,15 +1,19 @@
 {% extends 'base.njk' %}
 
 {% block main %}
-  <h1>Posts</h1>
-  <section>
-    {% for post in collections.posts | reverse %}
-      <article>
-        <a href="/posts/{{ post.data.title | slug }}"><h2>{{ post.data.title }}</h2></a>
-        <p>Posted on: {{ post.data.date }}</p>
-        <p>{{ post.data.description }}</p>
-        <a href="">Read more</a>
-      </article>
-    {% endfor %}
-  </section>
+  <div>
+    <h1>Posts</h1>
+    <div class="posts">
+      {% for post in collections.posts | reverse %}
+        <article class="post__snippet">
+          <a href="/posts/{{ post.data.title | slug }}" class="post__snippet__title">
+            <h2>{{ post.data.title }}</h2>
+          </a>
+          <p class="post__snippet__date">Posted on: {{ post.data.date | dateFilter }}</p>
+          <p class="post__snippet__description">{{ post.data.description }}</p>
+          <a href="/posts/{{ post.data.title | slug }}" class="post__snippet__more">Read more</a>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
 {% endblock main %}

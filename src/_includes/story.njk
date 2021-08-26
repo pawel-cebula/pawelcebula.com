@@ -1,12 +1,16 @@
-<div>
+<div class="story">
   <h2>My Story</h2>
-  {% for period in story %}
-    <div>
-      <h3>{{ period.name }}</h3>
-      <span>{{ period.from }} - {{ period.to }}</span>
-      {% for p in period.description %}
-        <p>{{ p }}</p>
-      {% endfor %}
-    </div>
-  {% endfor %}
+  <div class="periods">
+    {% for period in story %}
+      <div class="period">
+        <h3>{{ period.name }}</h3>
+        <p class="period__year">{{ period.from }} - {{ period.to }}</p>
+        <div class="period__description">
+          {% for p in period.description %}
+            <p>{{ p }}</p>
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
 </div>

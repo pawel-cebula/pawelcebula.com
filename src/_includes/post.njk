@@ -1,9 +1,11 @@
 {% extends 'base.njk' %}
 
 {% block main %}
-  <div>
-    <h1>{{ title }}</h1>
-    <p>Posted on {{ date }}</p>
-    {{ content | safe }}
+  <div class="post">
+    <h1 class="post__title">{{ title }}</h1>
+    <p class="post__date">Posted on {{ date | dateFilter }}</p>
+    <div class="post__content">
+      {{ content | safe }}
+    </div>
   </div>
 {% endblock main %}

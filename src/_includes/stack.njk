@@ -1,19 +1,21 @@
 <div>
   <h2>My Tech Stack</h2>
-  <div>
-    <h3>I'm most experienced with</h3>
-    <ul>
-      {% for tech in stack.primary %}
-        <li>{{ tech.name }}</li>
-      {% endfor %}
-    </ul>
-  </div>
-  <div>
-    <h3>I'm familiar with</h3>
-    <ul>
-      {% for tech in stack.secondary %}
-        <li>{{ tech.name }}</li>
-      {% endfor %}
-    </ul>    
+  <div class="stacks">
+    <div class="stack">
+      <h3>I'm most experienced with</h3>
+      <ul class="list-reset">
+        {% for tech in stack.primary %}
+          <li class="list-tag">{{ tech.name }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="stack">
+      <h3>I'm familiar with</h3>
+      <ul class="list-reset">
+        {% for tech in stack.secondary %}
+          <li class="list-tag">{{ tech.name }}</li>
+        {% endfor %}
+      </ul>    
+    </div>
   </div>
 </div>
