@@ -9,7 +9,7 @@
           <a href="/posts/{{ post.data.title | slug }}" class="post__snippet__title">
             <h2>{{ post.data.title }}</h2>
           </a>
-          <p class="post__snippet__date">Posted on: {{ post.data.date | dateFilter }}</p>
+          <p class="post__snippet__date">Published: {{ post.data.date | dateFilter }} | {{ post | readingTime }} read</p>
           <p class="post__snippet__description">{{ post.data.description }}</p>
           <a href="/posts/{{ post.data.title | slug }}" class="post__snippet__more">Read more</a>
         </article>

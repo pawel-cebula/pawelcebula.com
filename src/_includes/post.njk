@@ -3,7 +3,7 @@
 {% block main %}
   <div class="post">
     <h1 class="post__title">{{ title }}</h1>
-    <p class="post__date">Posted on {{ date | dateFilter }}</p>
+    <p>Published: {{ date | dateFilter }} | {{ content | readingTime }} read</p>
     <div class="post__content">
       {{ content | safe }}
     </div>
