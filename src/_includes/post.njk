@@ -1,9 +1,10 @@
 {% extends 'base.njk' %}
 
+{% set heroHeading = title %}
+{% set heroSub = 'Published: ' + date | dateFilter + ' | ' + content | readingTime + ' read' %}
+
 {% block main %}
   <div class="wrapper post">
-    <h1 class="post__title">{{ title }}</h1>
-    <p>Published: {{ date | dateFilter }} | {{ content | readingTime }} read</p>
     <div class="post__content">
       {{ content | safe }}
     </div>

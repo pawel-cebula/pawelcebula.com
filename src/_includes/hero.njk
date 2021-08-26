@@ -1,7 +1,9 @@
 <div class="hero">
   <div class="wrapper">
-    <h1>{{ name }}</h1>
-    <h2>{{ heading }}</h2>
-    <h3>{{ subheading }}</h3>
+    <h1>{{ heroHeading }}</h1>
+    <h2>{{ heroSub }}</h2>
+    {% if heroComment %}
+      <h3>{{ heroComment }}</h3>
+    {% endif %}
   </div>
 </div>

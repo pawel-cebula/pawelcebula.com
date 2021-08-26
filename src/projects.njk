@@ -1,12 +1,17 @@
+---
+title: Pawel Cebula - projects portfolio
+heroHeading: My projects
+heroSub: Examples of things I've worked on myself and with others
+---
+
 {% extends 'base.njk' %}
 
 {% block main %}
   <div class="wrapper">
-    <h1>Sample Projects</h1>
     <div class="projects">
       {% for project in projects %}
         <div class="project">
-          <div class="project__image">
+          <div class="project__image img-border">
             <img src="{{ project.image }}" alt="{{ project.name}} project image">
           </div>
           <div class="project__info">

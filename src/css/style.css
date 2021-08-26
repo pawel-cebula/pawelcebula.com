@@ -9,13 +9,22 @@
   --gray20: #707070;
   --gray10: #c5c5c5;
   /* --yellow: #FFDF6C; */
-  /* --white: #FFFFFF; */
+  --white: #FFFFFF;
 
-  --white: #F7F6F5;
-  --yellow: #E4AD68;
-  --lightblue: #8DA6B9;
-  --maroon: #B35964;
-  --darkblue: #3E5991;
+  --blue100: hsla(190, 95%, 90%, 1);
+  --blue200: hsla(200, 90%, 70%, 1);
+  --blue300: hsla(205, 90%, 50%, 1);
+  --blue400: hsla(205, 96%, 40%, 1);
+  --blue500: hsla(210, 96%, 33%, 1);
+  --blue600: hsla(211, 97%, 25%, 1);
+  --blue700: hsla(212, 100%, 17%, 1);
+  --blue800: hsla(219, 100%, 14%, 1);
+  --blue900: hsla(219, 100%, 10%, 1);
+  --grey400: hsla(220, 29%, 28%, 1);
+  --grey300: hsla(220, 15%, 43%, 1);
+  --grey200: hsla(222, 11%, 54%, 1);
+  --grey100: hsla(223, 11%, 63%, 1);
+  --yellow: hsla(45, 83%, 73%, 1);
 }
 
 *,
@@ -48,17 +57,18 @@ body {
   text-align: center; /* reconsider */
   background-color: var(--white);
   font-family: Verdana, sans-serif;
-  color: var(--gray30);
+  color: var(--grey400);
 }
 
 h1 {
-  border-bottom: 1px solid var(--gray10);
+  border-bottom: 2px solid var(--blue500);
   padding-bottom: 0.3em;
   margin-top: 0.5em;
 }
 
 a {
   text-decoration: none;
+  color: var(--blue300);
 }
 
 img {
@@ -73,7 +83,7 @@ select {
 }
 
 svg {
-  fill: var(--gray30);
+  fill: var(--blue600);
 }
 
 .container {
@@ -86,7 +96,18 @@ svg {
   max-width: 1180px;
   margin: 0 auto;
   padding: 0 2em;
-  border: 1px solid red;
+}
+
+.img-border {
+  border: 0.3em solid var(--yellow);
+  border-radius: 0.5em;
+}
+
+.img-transform {
+  transform: translate(1em, 1em);
+  position: relative;
+  z-index: -1;
+  border-radius: 0.5em;
 }
 
 .list-reset {
@@ -96,47 +117,41 @@ svg {
 
 .list-tag {
   display: inline-block;
-  background-color: var(--gray20);
+  background-color: var(--yellow);
   padding: 0.3em 0.6em;
   margin-bottom: 0.5em;
-  color: var(--white);
+  color: var(--blue600);
   font-size: 0.8rem;
+  border-radius: 0.5em;
 }
 
 /* header */
 
-/* header {
-  display: flex;
-  justify-content: space-between;
-} */
+header, .hero {
+  background-image: linear-gradient(to right, var(--blue500), var(--blue900));
+  color: var(--blue100);
+}
 
 header > .wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .logo {
-  /* margin-left: 2rem; */
-  align-self: flex-start;
   font-size: 1.5em;
   font-weight: 500;
-  color: var(--gray30);
+  color: var(--blue100);
+  align-self: flex-start;
 }
 
 .nav__toggle {
   position: absolute;
-  top: 0.5em;
-  right: 2.2em;
+  top: 0.4em;
+  right: 2em;
   height: 2em;
   width: 2em;
   border: 0;
   background-color: transparent;
-}
-
-.nav__toggle svg {
-  width: 1.8em;
-  height: 1.8em;
 }
 
 .nav__toggle__menu {
@@ -166,9 +181,15 @@ header > .wrapper {
 
 .nav__internal > a {
   font-size: 1.25rem;
-  color: var(--gray30);
-  border-bottom: 1px solid var(--gray10);
-  padding: 0.3em;
+  color: var(--blue100);
+  border-bottom: 1px solid var(--blue400);
+  padding: 0.5em;
+  transition: transform 0.1s linear;
+}
+
+.nav__internal > a:hover {
+  color: var(--yellow);
+  transform: scale(1.1);
 }
 
 .nav__external {
@@ -188,6 +209,16 @@ header > .wrapper {
   margin-left: 0.6em;
 }
 
+.nav svg {
+  fill: var(--blue100);
+  transition: transform 0.1s linear;
+}
+
+.nav svg:hover {
+  fill: var(--yellow);
+  transform: scale(1.1);
+}
+
 .nav__external svg {
   width: 2em;
   height: 2em;
@@ -203,6 +234,17 @@ footer {
 
 .hero {
   padding: 2em 0 4em;
+}
+
+.wave {
+  /* width: 100%; */
+  height: 5em;
+}
+
+.wave > svg {
+  background-image: linear-gradient(to right, var(--blue500), var(--blue900));
+  width: 100%;
+  height: 100%;
 }
 
 .features__item {
@@ -236,8 +278,16 @@ footer {
 
 .bio__photo {
   max-height: 50vh;
-  overflow: hidden;
+  /* border: 0.3em solid var(--yellow);
+  border-radius: 0.5em; */
 }
+
+/* .bio__photo > img {
+  transform: translate(1em, 1em);
+  position: relative;
+  z-index: -1;
+  border-radius: 0.5em;
+} */
 
 .period {
   margin: 1em 0;
@@ -383,7 +433,7 @@ footer {
   .bio__photo img {
     height: 100%;
     object-fit: cover;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
   }
 
   .bio__text {
@@ -405,7 +455,7 @@ footer {
   .project__image {
     flex-basis: 50%;
     max-height: 50vh;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 0;
   }
 
@@ -423,11 +473,16 @@ footer {
 @media (min-width: 64em) {
   header > .wrapper {
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .nav {
     display: flex;
     align-items: center;
+  }
+
+  .logo {
+    align-self: center;
   }
   
   .nav__toggle {
@@ -445,7 +500,7 @@ footer {
   
   .nav__internal > a {
     border: 0;
-    margin: 0 0.3em;
+    margin: 0 0.6em;
     font-size: 1.1em;
   }
 
@@ -461,7 +516,6 @@ footer {
 
   .period {
     flex-basis: 50%;
-    border: 1px solid red;
   }
 
   .project__image {

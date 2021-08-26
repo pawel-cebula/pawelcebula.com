@@ -1,8 +1,12 @@
+---
+title: Pawel Cebula - My blog posts
+heroHeading: Posts
+heroSub: Things I've written that others might find interesting or helpful
+---
 {% extends 'base.njk' %}
 
 {% block main %}
   <div class="wrapper">
-    <h1>Posts</h1>
     <div class="posts">
       {% for post in collections.posts | reverse %}
         <article class="post__snippet">
