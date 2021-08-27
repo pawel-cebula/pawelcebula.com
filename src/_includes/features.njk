@@ -1,9 +1,13 @@
 <div class="wrapper features">
   {% for feat in features %}
-    <div class="features__item">
-      {% include 'svg/' + feat.icon + '.svg' %}
-      <h3>{{ feat.name }}</h3>        
-      <p>{{ feat.description }}</p>
+    <div class="card-wrapper">
+      <div class="features__item card-content">
+        {% include 'svg/' + feat.icon + '.svg' %}
+        <div class="features__item__info">
+          <h3>{{ feat.name }}</h3>        
+          <p>{{ feat.description }}</p>
+        </div>
+      </div>
     </div>
   {% endfor %}
 </div>

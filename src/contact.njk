@@ -7,20 +7,10 @@ heroSub: You can find my work online and reach our through these channels
 
 {% block main %}
   <div class="wrapper">
-    {# <ul class="list-reset contacts">
-      {% for contact in contacts %}
-        <li>
-          <a href="{{ contact.url }}">
-            {% include 'svg/' + contact.icon + '.svg' %}
-            {{ contact.prompt }}
-          </a>
-        </li>
-      {% endfor %}
-    </ul> #}
     <div class="contacts">
       {% for contact in contacts %}
-        <div class="contact">
-          <a href="{{ contact.url }}">
+        <div class="contact card-wrapper">
+          <a href="{{ contact.url }}" class="card-content">
             {% include 'svg/' + contact.icon + '.svg' %}
             <span class="contact__prompt">{{ contact.prompt }}</span>
           </a>
