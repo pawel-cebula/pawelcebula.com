@@ -2,13 +2,15 @@
   <h2>My Story</h2>
   <div class="periods">
     {% for period in story %}
-      <div class="period">
-        <h3>{{ period.name }}</h3>
-        <p class="period__year">{{ period.from }} - {{ period.to }}</p>
-        <div class="period__description">
-          {% for p in period.description %}
-            <p>{{ p }}</p>
-          {% endfor %}
+      <div class="card-wrapper">
+        <div class="period card-content">
+          <p class="period__year">{{ period.from }} - {{ period.to }}</p>
+          <h3>{{ period.name }}</h3>
+          <div class="period__description">
+            {% for p in period.description %}
+              <p>{{ p }}</p>
+            {% endfor %}
+          </div>
         </div>
       </div>
     {% endfor %}

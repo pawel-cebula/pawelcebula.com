@@ -69,6 +69,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   text-transform: uppercase;
   color: var(--blue600);
+  letter-spacing: 0.01em;
 }
 
 h1 {
@@ -169,11 +170,12 @@ header > .wrapper {
   display: flex;
   align-self: flex-start;
   border-bottom: 2px solid var(--yellow);
+  letter-spacing: 0.05em;
 }
 
 .logo {
   font-size: 1.5em;
-  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
   color: var(--blue100);
   padding: 0.3em 0;
 }
@@ -216,8 +218,9 @@ header > .wrapper {
 
 .nav__internal > a {
   font-size: 1.25rem;
+  font-family: 'Montserrat', sans-serif;
   color: var(--blue100);
-  padding: 0.3em 0.5em;
+  padding: 0.3em;
   transition: transform 0.1s linear;
 }
 
@@ -371,16 +374,31 @@ footer svg {
   max-width: 30em;
 }
 
+.periods {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+  gap: 2em;
+}
+
 .period {
-  margin: 1em 0;
+  /* margin: 1em 0; */
+  padding: 2em 2em;
+  max-width: 48em;
+}
+
+.period > h3 {
+  margin-top: 0.5em;
 }
 
 .period__year {
-  background-color: var(--grey100);
+  background-color: var(--pink);
   display: inline-block;
-  padding: 0.2em 0.5em;
+  padding: 0.3em 1em;
   font-size: 0.85rem;
-  color: var(--grey400);
+  font-weight: 700;
+  color: var(--white);
   border-radius: 0.5em;
 }
 
