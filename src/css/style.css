@@ -11,7 +11,7 @@
   /* --yellow: #FFDF6C; */
   --white: #FFFFFF;
 
-  --blue100: hsla(190, 95%, 90%, 1);
+  --blue100: hsla(190, 95%, 95%, 1);
   --blue200: hsla(200, 90%, 70%, 1);
   --blue300: hsla(205, 90%, 50%, 1);
   --blue400: hsla(205, 96%, 40%, 1);
@@ -24,7 +24,7 @@
   --grey300: hsla(220, 15%, 43%, 1);
   --grey200: hsla(222, 11%, 54%, 1);
   --grey100: hsla(223, 11%, 63%, 1);
-  --yellow: hsla(45, 83%, 73%, 1);
+  --yellow: hsla(45, 93%, 75%, 1);
 }
 
 *,
@@ -60,8 +60,17 @@ body {
   color: var(--grey400);
 }
 
+body {
+  font-family: 'Lora', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 h1 {
-  border-bottom: 2px solid var(--blue500);
   padding-bottom: 0.3em;
   margin-top: 0.5em;
 }
@@ -137,16 +146,22 @@ header > .wrapper {
   flex-direction: column;
 }
 
+.logo-wrapper {
+  display: flex;
+  align-self: flex-start;
+  border-bottom: 2px solid var(--yellow);
+}
+
 .logo {
   font-size: 1.5em;
   font-weight: 500;
   color: var(--blue100);
-  align-self: flex-start;
+  padding: 0.3em 0;
 }
 
 .nav__toggle {
   position: absolute;
-  top: 0.4em;
+  top: 0.5em;
   right: 2em;
   height: 2em;
   width: 2em;
@@ -183,7 +198,7 @@ header > .wrapper {
   font-size: 1.25rem;
   color: var(--blue100);
   border-bottom: 1px solid var(--blue400);
-  padding: 0.5em;
+  padding: 0.3em 0.5em;
   transition: transform 0.1s linear;
 }
 
@@ -248,12 +263,21 @@ footer {
 }
 
 .features__item {
-  padding: 0.5em 0;
+  padding: 1em 1em;
 }
 
-.features__item > svg {
-  width: 6em;
-  height: 6em;
+.features__item svg {
+  width: 4em;
+  height: 4em;
+  background-color: var(--blue600);
+  /* background-image: linear-gradient(to right, var(--blue500), var(--blue900)); */
+  fill: var(--blue100);
+  border-radius: 50%;
+  padding: 0.8em;
+}
+
+.features__item > h3 {
+  margin-top: 0.5em;
 }
 
 .features__item > p {
@@ -415,6 +439,10 @@ footer {
   :root {
     font-size: 1em;
   }
+
+  .nav__toggle {
+    top: 0.8em;
+  }
   
   .features {
     display: flex;
@@ -423,7 +451,7 @@ footer {
 
   .features__item {
     flex-basis: 50%;
-    padding: 0.5em 2em;
+    padding: 1em 2em;
   }
 
   .bio {
@@ -474,15 +502,17 @@ footer {
   header > .wrapper {
     flex-direction: row;
     justify-content: space-between;
+    /* border-bottom: 2px solid var(--yellow); */
+  }
+
+  .logo-wrapper {
+    align-self: stretch;
   }
 
   .nav {
     display: flex;
     align-items: center;
-  }
-
-  .logo {
-    align-self: center;
+    border-bottom: 2px solid var(--yellow);
   }
   
   .nav__toggle {
