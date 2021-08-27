@@ -3,10 +3,6 @@
 :root {
   box-sizing: border-box;
   font-size: calc(0.5em + 1vw);
-  /* limit font-size at large view to i.e. 1.125em */
-
-  
-
   --blue100: hsla(190, 95%, 95%, 1);
   --blue200: hsla(200, 90%, 70%, 1);
   --blue300: hsla(205, 90%, 50%, 1);
@@ -128,10 +124,11 @@ svg {
 .img-border {
   border: 0.3em solid var(--yellow);
   border-radius: 0.5em;
+  align-self: flex-start;
 }
 
 .img-transform {
-  transform: translate(1em, 1em);
+  transform: translate(0.6em, 0.6em);
   position: relative;
   z-index: -1;
   border-radius: 0.5em;
@@ -368,7 +365,6 @@ footer svg {
   align-items: center;
   gap: 2em;
   margin-top: 2em;
-  /* margin: 2em auto; */
 }
 
 .stack {
@@ -407,13 +403,17 @@ footer svg {
 }
 
 .project__image {
-  margin-bottom: 1em;
+  /* margin-bottom: 1em; */
   max-height: 40vh;
   overflow: hidden;
 }
 
 .project__image > img {
   object-fit: cover;
+}
+
+.project__info {
+  margin-top: 2em;
 }
 
 .project h2 {
@@ -498,20 +498,10 @@ footer svg {
   padding: 0.3em;
 }
 
-/* .contact {
-  border: 0.25em solid var(--blue600);
-  border-radius: 0.5em;
-} */
-
 .contact > a {
   display: flex;
   align-items: center;
-  /* border-radius: 0.5em;
-  background-color: var(--yellow); */
   padding: 1em 2em;
-  /* transform: translate(0.5em, 0.5em);
-  position: relative;
-  z-index: -1; */
   font-size: 1.1rem;
   font-family: 'Montserrat', sans-serif;
   color: var(--blue600);
@@ -532,11 +522,6 @@ footer svg {
     top: 0.8em;
   }
 
-  /* .features__item {
-    flex-basis: 50%;
-    padding: 1em 2em;
-  } */
-
   .bio {
     display: flex;
   }
@@ -544,7 +529,6 @@ footer svg {
   .bio__photo img {
     height: 100%;
     object-fit: cover;
-    /* border: 1px solid blue; */
   }
 
   .bio__text {
@@ -567,9 +551,8 @@ footer svg {
   }
 
   .project__image {
-    flex-basis: 50%;
+    flex: 0 1 50%;
     max-height: 50vh;
-    /* border: 1px solid red; */
     margin: 0;
   }
 
@@ -579,7 +562,7 @@ footer svg {
   }
 
   .project__info {
-    flex-basis: 50%;
+    flex: 1 0 50%;
     padding-left: 1em;
   }
 }
@@ -588,7 +571,6 @@ footer svg {
   header > .wrapper {
     flex-direction: row;
     justify-content: space-between;
-    /* border-bottom: 2px solid var(--yellow); */
   }
 
   .logo-wrapper {
@@ -619,11 +601,6 @@ footer svg {
     margin: 0 0.6em;
     font-size: 1.1em;
   }
-
-  /* .features__item {
-    flex-basis: 25%;
-    padding: 0.5em 1em;
-  } */
 
   .periods {
     display: flex;

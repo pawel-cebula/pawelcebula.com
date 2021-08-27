@@ -11,8 +11,10 @@ heroSub: Examples of things I've worked on myself and with others
     <div class="projects">
       {% for project in projects %}
         <div class="project">
-          <div class="project__image img-border">
-            <img src="{{ project.image }}" alt="{{ project.name}} project image">
+          <div class="img-border">
+            <div class="project__image img-transform">
+              <img src="{{ project.image }}" alt="{{ project.name}} project image">
+            </div>
           </div>
           <div class="project__info">
             <h2>{{ project.name }}</h2>
