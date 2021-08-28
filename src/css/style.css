@@ -153,8 +153,7 @@ svg {
 
 /* header */
 
-header, 
-.hero {
+header {
   background-image: linear-gradient(to right, var(--blue500), var(--blue900));
 }
 
@@ -641,7 +640,7 @@ footer svg {
     display: flex;
     flex-wrap: wrap;
   }
-
+stack
   .period {
     flex-basis: 50%;
   }
