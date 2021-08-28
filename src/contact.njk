@@ -7,7 +7,11 @@ heroSub: You can find my work online and reach out through these channels
 
 {% block main %}
   <div class="wrapper">
-    <div class="contacts">
+    <section 
+      class="contacts"
+      aria-labelledby="heroHeading"
+      aria-describedby="heroSub heroComment"
+    >
       {% for contact in contacts %}
         <div class="card-wrapper">
           <div class="contact card-content">
@@ -17,9 +21,6 @@ heroSub: You can find my work online and reach out through these channels
           <a href="{{ contact.url }}" class="contact__link"></a>
         </div>
       {% endfor %}
-    </div>
+    </section>
   </div>
-  <script>
-    
-  </script>
 {% endblock main %}

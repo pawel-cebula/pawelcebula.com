@@ -1,12 +1,16 @@
 {% extends 'base.njk' %}
 
 {% set heroHeading = title %}
-{% set heroSub = 'Published: ' + date | dateFilter + ' | ' + content | readingTime + ' read' %}
+{% set heroComment = 'Published: ' + date | dateFilter + ' | ' + content | readingTime + ' read' %}
 
 {% block main %}
   <div class="wrapper post">
-    <div class="post__content">
+    <article 
+      class="post__content"
+      aria-labelledby="heroHeading"
+      aria-describedby="heroSub heroComment"
+    >
       {{ content | safe }}
-    </div>
+    </article>
   </div>
 {% endblock main %}

@@ -8,9 +8,13 @@ heroSub: Some things I've worked on myself and with others
 
 {% block main %}
   <div class="wrapper">
-    <div class="projects">
+    <section 
+      class="projects"
+      aria-labelledby="heroHeading"
+      aria-describedby="heroSub heroComment"
+    >
       {% for project in projects %}
-        <div class="project">
+        <article class="project">
           <div class="img-border">
             <div class="project__image img-transform">
               <img src="{{ project.image }}" alt="{{ project.name}} project image">
@@ -37,8 +41,8 @@ heroSub: Some things I've worked on myself and with others
               {% endfor %}
             </div>
           </div>
-        </div>
+        </article>
       {% endfor %}
-    </div>
+    </section>
   </div>
 {% endblock main %}

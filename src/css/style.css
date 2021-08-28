@@ -50,7 +50,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  text-align: center; /* reconsider */
+  text-align: center;
   background-color: var(--white);
   font-family: Verdana, sans-serif;
   color: var(--grey500);
@@ -290,7 +290,6 @@ footer svg {
 }
 
 .wave {
-  /* width: 100%; */
   height: 5em;
 }
 
@@ -388,7 +387,6 @@ footer svg {
 }
 
 .period {
-  /* margin: 1em 0; */
   padding: 2em 2em;
   max-width: 48em;
 }
@@ -426,7 +424,6 @@ footer svg {
 }
 
 .project__image {
-  /* margin-bottom: 1em; */
   max-height: 40vh;
   overflow: hidden;
 }

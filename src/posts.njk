@@ -7,7 +7,11 @@ heroSub: Thoughts and learnings from my journey
 
 {% block main %}
   <div class="wrapper">
-    <div class="posts">
+    <section 
+      class="posts"
+      aria-labelledby="heroHeading"
+      aria-describedby="heroSub heroComment"
+    >
       {% for post in collections.posts | reverse %}
         <article class="post__snippet">
           <a href="/posts/{{ post.data.title | slug }}" class="post__snippet__title">
@@ -18,6 +22,6 @@ heroSub: Thoughts and learnings from my journey
           <a href="/posts/{{ post.data.title | slug }}" class="post__snippet__more">Read more</a>
         </article>
       {% endfor %}
-    </div>
+    </section>
   </div>
 {% endblock main %}

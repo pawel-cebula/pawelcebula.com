@@ -1,9 +1,11 @@
 <div class="hero">
   <div class="wrapper">
-    <h1>{{ heroHeading }}</h1>
-    <h2>{{ heroSub }}</h2>
+    <h1 id="heroHeading">{{ heroHeading }}</h1>
+    {% if heroSub %}
+      <h2 id="heroSub">{{ heroSub }}</h2>
+    {% endif %}
     {% if heroComment %}
-      <h3>{{ heroComment }}</h3>
+      <p id="heroComment">{{ heroComment }}</p>
     {% endif %}
   </div>
 </div>
