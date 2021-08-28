@@ -158,6 +158,10 @@ header,
   background-image: linear-gradient(to right, var(--blue500), var(--blue900));
 }
 
+.hero > .wrapper {
+  max-width: 48em;
+}
+
 .hero > .wrapper > * {
   color: var(--blue100);
 }
