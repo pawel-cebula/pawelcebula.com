@@ -9,13 +9,17 @@ heroSub: You can find my work online and reach our through these channels
   <div class="wrapper">
     <div class="contacts">
       {% for contact in contacts %}
-        <div class="contact card-wrapper">
-          <a href="{{ contact.url }}" class="card-content">
+        <div class="card-wrapper">
+          <div class="contact card-content">
             {% include 'svg/' + contact.icon + '.svg' %}
             <span class="contact__prompt">{{ contact.prompt }}</span>
-          </a>
+          </div>
+          <a href="{{ contact.url }}" class="contact__link"></a>
         </div>
       {% endfor %}
     </div>
   </div>
+  <script>
+    
+  </script>
 {% endblock main %}
