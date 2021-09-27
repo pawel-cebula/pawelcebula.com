@@ -2,7 +2,7 @@ module.exports = [
   {
     prompt: 'Email me at hi@pawelcebula.com',
     icon: 'email',
-    url: 'mailto:ptcebula@gmail.com',
+    url: 'mailto:hi@pawelcebula.com',
   },
   {
     prompt: 'Check my code on GitHub',
