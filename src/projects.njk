@@ -1,6 +1,6 @@
 ---
-title: Pawel Cebula - Projects portfolio
-heroHeading: My projects
+title: Pawel Cebula | Projects | My portfolio of web development projects
+heroHeading: Projects
 heroSub: Some things I've worked on myself and with others
 ---
 
@@ -11,24 +11,22 @@ heroSub: Some things I've worked on myself and with others
     <section 
       class="projects"
       aria-labelledby="heroHeading"
-      aria-describedby="heroSub heroComment"
+      aria-describedby="heroSub"
     >
       {% for project in projects %}
         <article class="project">
-          <div class="img-border">
-            <div class="project__image img-transform">
-              <img src="{{ project.image }}" alt="{{ project.name}} project image">
-            </div>
+          <div class="project__image img-border">
+            <img src="{{ project.image }}" alt="{{ project.name}} project image">
           </div>
           <div class="project__info">
-            <h2>{{ project.name }}</h2>
-            <a href="{{ project.github }}" class="project__git">
-              {% include 'svg/github.svg' %}
-            </a>
+            {% if project.github %}
+              <a href="{{ project.github }}" class="project__git">
+                {% include 'svg/github.svg' %}
+              </a>
+            {% endif %}
+            <h3>{{ project.name }}</h3>
             {% if project.url %}
               <a href="{{ project.url }}" class="project__url">{{ project.url }}</a>
-            {% else %}
-              <p>n/a</p>
             {% endif %}
             <ul class="list-reset">
               {% for tech in project.stack %}

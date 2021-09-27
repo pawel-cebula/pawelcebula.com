@@ -1,11 +1,16 @@
 <section class="story">
-  <h2>My Story</h2>
+  <h3>My Story</h3>
   <div class="periods">
-    {% for period in story %}
-      <div class="card-wrapper">
-        <div class="period card-content">
-          <p class="period__year">{{ period.from }} - {{ period.to }}</p>
-          <h3>{{ period.name }}</h3>
+    {% for period in story | reverse %}
+      <div class="period-wrapper">
+        <div class="period-svg-wrapper">
+          {% for icon in period.icons %}
+            {% include 'svg/' + icon + '.svg' %}
+          {% endfor %}
+        </div>
+        <div class="period">
+          <h4>{{ period.name }}</h4>
+          <p class="list-tag">{{ period.from }} - {{ period.to }}</p>
           <div class="period__description">
             {% for p in period.description %}
               <p>{{ p }}</p>

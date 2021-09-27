@@ -1,26 +1,26 @@
 module.exports = {
   primary: [
-    { name: "HTML", icon: "html" },
-    { name: "CSS", icon: "css" },
-    { name: "JavaScript", icon: "js" },
-    { name: "Node.js", icon: "node" },
-    { name: "Express", icon: "express" },
-    { name: "React", icon: "react" },
-    { name: "MongoDB", icon: "mongo" },
-    { name: "PostgreSQL", icon: "psql" },
-    { name: "Git", icon: "git" },
-    { name: "GitHub", icon: "github" }
+    { name: 'HTML' },
+    { name: 'CSS' },
+    { name: 'JavaScript' },
+    { name: 'React' },
+    { name: 'Node.js' },
+    { name: 'Express' },
+    { name: 'MongoDB' },
+    { name: 'PostgreSQL' },
+    { name: 'Git' },
+    { name: 'GitHub' },
   ],
   secondary: [
-    { name: "TailwindCSS", icon: "tailwind" },
-    { name: "TypeScript", icon: "ts" },
-    { name: "GraphQL", icon: "gql" },
-    { name: "Vue.js", icon: "vue" },
-    { name: "Heroku", icon: "heroku" },
-    { name: "AWS EC2", icon: "aws" },
-    { name: "CI/CD", icon: "cicd" },
-    { name: "GitHub Actions", icon: "actions" },
-    { name: "Python", icon: "python" },
-    { name: "Django", icon: "django" }
-  ]
-}
+    { name: 'TypeScript' },
+    { name: 'GraphQL' },
+    { name: 'Vue.js' },
+    { name: 'TailwindCSS' },
+    { name: 'Eleventy' },
+    { name: 'Heroku' },
+    { name: 'AWS EC2' },
+    { name: 'GitHub Actions' },
+    { name: 'Python' },
+    { name: 'Django' },
+  ],
+};

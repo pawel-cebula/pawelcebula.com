@@ -1,11 +1,20 @@
 ---
-title: Pawel Cebula - Home page
-heroHeading: I'm Pawel
-heroSub: Self-taught web developer
-heroComment: Previously startup founder & COO
+title: Pawel Cebula | Web developer and startup founder based in Berlin
 ---
 {% extends 'base.njk' %}
 
 {% block main %}
-  {% include 'features.njk' %}    
+  <div class="wrapper">
+    <section class="intro">
+      <div class="intro__text">
+        <h1>I'm Pawel,<br/>
+          web developer based in Berlin.
+        </h1>
+        <h2>I love learning and building new things.</h2>
+        <p>Before getting into coding, I founded MEDIGO, helping people access quality healthcare globally.</p>
+        <p>I like to go deep into a lot of things, most recently ramen, good coffee, craft beer and homebrewing, most things web3, HIIT, yoga and wakeboarding.</p>
+      </div>
+      {% include 'svg/intro.svg' %}
+    </section>
+  </div>
 {% endblock main %}

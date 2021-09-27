@@ -1,7 +1,7 @@
 ---
-title: Pawel Cebula - Contacts
+title: Pawel Cebula | Contacts | Find my work online and reach out to me
 heroHeading: Contact me
-heroSub: You can find my work online and reach out through these channels
+heroSub: Find my work online and reach out through these channels
 ---
 {% extends 'base.njk' %}
 
@@ -10,17 +10,17 @@ heroSub: You can find my work online and reach out through these channels
     <section 
       class="contacts"
       aria-labelledby="heroHeading"
-      aria-describedby="heroSub heroComment"
+      aria-describedby="heroSub"
     >
-      {% for contact in contacts %}
-        <div class="card-wrapper">
-          <div class="contact card-content">
+      <div class="contacts-wrapper">
+        {% for contact in contacts %}
+          <a href="{{ contact.url }}" class="contact">
             {% include 'svg/' + contact.icon + '.svg' %}
-            <span class="contact__prompt">{{ contact.prompt }}</span>
-          </div>
-          <a href="{{ contact.url }}" class="contact__link"></a>
-        </div>
-      {% endfor %}
+            <h3 class="contact__prompt">{{ contact.prompt }}</h3>
+          </a>
+        {% endfor %}
+      </div>
+      {% include 'svg/contact.svg' %}
     </section>
   </div>
 {% endblock main %}

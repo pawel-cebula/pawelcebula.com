@@ -1,7 +1,7 @@
 <header>
-  <div class="wrapper">
+  <div class="wrapper header">
     <div class="logo-wrapper">
-      <a href="/" class="logo">pawelcebula.com</a>
+      <a href="/" class="logo">pawel cebula</a>
     </div>
     <nav class="nav">
       <button class="nav__toggle">
@@ -17,22 +17,12 @@
           <a href="{{ item.url }}">{{ item.name }}</a>
         {% endfor %}
       </div>
-      <div class="nav__external">
-        {% for item in navigation.external %}
-          <a href="{{ item.url }}">
-            {% include 'svg/' + item.icon + '.svg' %}
-          </a>
-        {% endfor %}
-      </div>
     </nav>
   </div>
 
   {% if heroHeading %}
     {% include 'hero.njk' %}
   {% endif %}
-  <div class="wave">
-    {% include 'svg/wave.svg' %}
-  </div>
 
   <script type="text/javascript">
     (function () {
