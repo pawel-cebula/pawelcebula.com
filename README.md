@@ -5,7 +5,7 @@ This is my first personal website, which includes:
 - Home
 - About me
 - Projects
-- Posts
+- Posts (coming soon)
 - Contact
 
 ## Technology
@@ -14,10 +14,10 @@ The website was built with [Eleventy](https://www.11ty.dev/), a JS-based static 
 
 ## To dos:
 
-- [ ] Optimize for SEO and social media (i.e. `og` and `twitter` meta tags)
-- [ ] Store images externally
-- [ ] Syntax highlighting for code snippets in blog posts
 - [ ] Analytics
+- [ ] Optimize for SEO and social media (i.e. `og` and `twitter` meta tags)
+- [ ] Syntax highlighting for code snippets in blog posts
+- [ ] Store images externally
 - [ ] Automate image processing
 - [ ] Pagination on posts
 
@@ -31,7 +31,7 @@ To run the Eleventy app locally:
 git clone https://github.com/pawel-cebula/pawelcebula.com.git
 ```
 
-1. Install dependencies
+2. Install dependencies
 
 ```
 npm install
