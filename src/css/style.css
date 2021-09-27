@@ -408,10 +408,16 @@ footer svg {
   margin: 3em 0;
 }
 
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .contact {
   display: flex;
   align-items: center;
-  margin: 2em 0;
+  margin: 1em 0;
   gap: 1em;
 }
 

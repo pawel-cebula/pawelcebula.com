@@ -12,7 +12,7 @@ heroSub: Find my work online and reach out through these channels
       aria-labelledby="heroHeading"
       aria-describedby="heroSub"
     >
-      <div class="contacts-wrapper">
+      <div class="contact-wrapper">
         {% for contact in contacts %}
           <a href="{{ contact.url }}" class="contact">
             {% include 'svg/' + contact.icon + '.svg' %}
