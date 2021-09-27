@@ -1,7 +1,7 @@
 const dateFilter = require('./src/filters/dateFilter.js');
 const readingTime = require('eleventy-plugin-reading-time');
 
-module.exports = config => {
+module.exports = (config) => {
   config.setBrowserSyncConfig({ ghostMode: false });
   config.addPlugin(readingTime);
   config.addFilter('dateFilter', dateFilter);
@@ -12,7 +12,7 @@ module.exports = config => {
     markdownTemplateEngine: 'njk',
     dir: {
       input: 'src',
-      output: 'dist'
-    }
-  }
-}
+      output: '_site',
+    },
+  };
+};
