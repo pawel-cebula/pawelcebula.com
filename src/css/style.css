@@ -171,6 +171,14 @@ main {
   background-color: transparent;
 }
 
+.nav__toggle svg {
+  height: 2em;
+  width: 2em;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .nav__toggle svg:hover {
   fill: var(--pink);
 }
