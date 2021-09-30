@@ -41,7 +41,7 @@ module.exports = [
       "I love learning about new technologies and have recently been exploring TypeScript, Vue.js, GraphQL and TailwindCSS. I'm keen to continue working with a wide range of technologies but I'm also looking forward to go deep on some of the topics.",
       'I’m very thankful for the amazing community resources I’ve had at my disposal, including online courses and tutorials, books, documentation, and very supportive (and generous with their time) developer friends.',
       'The most powerful learning tool, however, has certainly been working on personal projects, which pushed me out of my comfort zone and exposed me to the challenges and struggles of figuring things out on your own. I’m happy to say that over the time I’ve been able to significantly reduce the frequency with which I’ve been annoying my patient developer friends and instead now rely primarily on documentation, blog posts, tutorials and forums.',
-      "I'm looking forward to continue learning inside a team with a strong engineering culture, while continuing to work on personal projects.",
+      "I'm looking forward to continue learning and contributing as part of a team with a strong engineering culture, while utilizing and expanding my development skills in personal projects.",
     ],
   },
 ];
