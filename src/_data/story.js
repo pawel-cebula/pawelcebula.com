@@ -38,10 +38,10 @@ module.exports = [
       'While I’ve learned a ton at MEDIGO, I felt that something was missing and that I had a blind spot. I was curious about the work of our tech team but I had little chance to interact with them on a daily basis.',
       'In January 2020, I started learning to code and I’ve not looked back since. After learning some fundamentals of computer science while getting familiar with Python, I’ve decided to focus on web development, initially working with Django, before moving on to the JavaScript ecosystem.',
       'Since July 2020, I’ve been primarily working with HTML, CSS, React, Node.js, Express, MongoDB and PostgreSQL.',
-      "I love learning about new technologies and have recently been spending some time with TypeScript, Vue.js, GraphQL and TailwindCSS. I'm keen to continue working with a wide range of technologies but I'm also looking forward to go deep on some of the topics.",
+      "I love learning about new technologies and have recently been exploring TypeScript, Vue.js, GraphQL and TailwindCSS. I'm keen to continue working with a wide range of technologies but I'm also looking forward to go deep on some of the topics.",
       'I’m very thankful for the amazing community resources I’ve had at my disposal, including online courses and tutorials, books, documentation, and very supportive (and generous with their time) developer friends.',
       'The most powerful learning tool, however, has certainly been working on personal projects, which pushed me out of my comfort zone and exposed me to the challenges and struggles of figuring things out on your own. I’m happy to say that over the time I’ve been able to significantly reduce the frequency with which I’ve been annoying my patient developer friends and instead now rely primarily on documentation, blog posts, tutorials and forums.',
-      "I'm looking forward to continue learning inside a company with a strong engineering culture, while continuing to work on my personal projects",
+      "I'm looking forward to continue learning inside a team with a strong engineering culture, while continuing to work on personal projects.",
     ],
   },
 ];

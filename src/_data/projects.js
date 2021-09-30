@@ -1,7 +1,7 @@
 module.exports = [
   {
     name: 'Slurpin (API & SPA)',
-    url: 'https://slurpin-berlin.herokuapp.com/',
+    url: 'https://slurpin-berlin.herokuapp.com',
     github: 'https://github.com/pawel-cebula/slurpin',
     description: [
       'Slurpin is an app that let you find ramen places in Berlin and rate their bowls.',
