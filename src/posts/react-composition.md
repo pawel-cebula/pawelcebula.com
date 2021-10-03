@@ -1,5 +1,5 @@
 ---
-title: Abstraction and composition in React's functional components
+title: Abstraction and composition in React functional components
 description: Composition is a very fundamental and powerful concept in React because it makes it easier to manage your codebase by avoiding repetition, while providing flexibility in situations where you don't know what you might want to render inside a component ahead of time, or if you want to customize a component into its more specialized variation.
 date: 2021-10-01
 tags: ['posts', 'JavaScript', 'React']
