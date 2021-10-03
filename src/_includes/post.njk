@@ -10,6 +10,7 @@
       aria-describedby="heroSub heroComment"
     >
       <p class="post__snippet__date">{{ 'Published: ' + date | dateFilter + ' | ' + content | readingTime + ' read' }}</p>
+      {% include 'tags.njk' %}
       {{ content | safe }}
     </article>
   </div>

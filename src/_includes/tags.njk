@@ -1,0 +1,7 @@
+<ul class="list-reset">
+  {% for tag in tags %}
+    {% if tag !== 'posts' %}
+      <li class="list-tag">{{ tag }}</li>
+    {% endif %}
+  {% endfor %}
+</ul>

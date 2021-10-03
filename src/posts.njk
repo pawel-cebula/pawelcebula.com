@@ -1,7 +1,7 @@
 ---
 title: Pawel Cebula | Blog | Posts with learnings and insights from my journey
 heroHeading: Posts
-heroSub: Thoughts and learnings from my journey
+heroSub: Insights, learnings and notes to self
 ---
 {% extends 'base.njk' %}
 
@@ -12,14 +12,21 @@ heroSub: Thoughts and learnings from my journey
       aria-labelledby="heroHeading"
       aria-describedby="heroSub"
     >
+      <div class="quote">
+        <p>One of the most interesting humans - <a href="https://en.wikipedia.org/wiki/Richard_Feynman">Richard Feynman</a> - once said:</p>
+        <blockquote>"If you can’t explain something in simple terms, you don’t understand it."</blockquote>
+        <p>These posts are my attempt to explain things to myself to see if I really understand them. Hopefully, some people will find them useful or interesting.</p>
+      </div>
       {% for post in collections.posts | reverse %}
+        {% set tags = post.data.tags %}
         <article class="post__snippet">
           <a href="/posts/{{ post.data.title | slug }}" class="post__snippet__title">
             <h3>{{ post.data.title }}</h3>
           </a>
           <p class="post__snippet__date">Published: {{ post.data.date | dateFilter }} | {{ post | readingTime }} read</p>
+          {% include 'tags.njk' %}
           <p class="post__snippet__description">{{ post.data.description }}</p>
-          <a href="/posts/{{ post.data.title | slug }}" class="post__snippet__more">Read more</a>
+          <a href="/posts/{{ post.data.title | slug }}" class="post__snippet__more"><p>Read more</p></a>
         </article>
       {% endfor %}
     </section>

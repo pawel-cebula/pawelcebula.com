@@ -9,6 +9,10 @@
       "url": "/projects/"
     },
     {
+      "name": "posts",
+      "url": "/posts/"
+    },
+    {
       "name": "contact",
       "url": "/contact/"
     }

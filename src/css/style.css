@@ -137,6 +137,17 @@ main {
   color: var(--darkgrey);
 }
 
+.quote {
+  margin-bottom: 2em;
+}
+
+blockquote {
+  margin: 1em 0;
+  border-left: 2px solid var(--lightgrey);
+  padding: 0.7em 1em;
+  font-style: italic;
+}
+
 /* header */
 
 .header {
@@ -368,7 +379,7 @@ footer svg {
   border-top: 1px solid var(--lightgrey);
 }
 
-.post__snippet:not(:first-of-type) {
+.post__snippet {
   margin-top: 1em;
   padding-top: 1em;
 }
@@ -380,7 +391,9 @@ footer svg {
 }
 
 .post__snippet__more {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  display: inline-block;
+  margin-top: 1em;
 }
 
 /* post */
@@ -397,8 +410,19 @@ footer svg {
   color: var(--indigo);
 }
 
-.post__content ul {
+.post__content h3 {
+  padding-left: 1.5em;
+  font-weight: 400;
+}
+
+.post__content ul:not(.list-reset) {
   padding-left: 2em;
+}
+
+.post__content img {
+  max-width: min(640px, 100%);
+  border: 1px solid var(--lightgrey);
+  border-radius: 0.3em;
 }
 
 /* contact */
