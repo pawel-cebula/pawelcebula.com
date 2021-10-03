@@ -9,7 +9,7 @@ module.exports = [
     ],
   },
   {
-    name: 'Studying abroad',
+    name: 'Studying abroad and online poker',
     from: '2006',
     to: '2013',
     icons: ['study'],
