@@ -15,7 +15,7 @@ module.exports = [
     icons: ['study'],
     description: [
       'I moved to Manchester (UK), where I started studying International Business. This took me for an exchange year to Hong Kong, and for my masters to Rotterdam (Netherlands) and Nanjing (China), and all across Asia in between. Those years helped me appreciate different cultures, perspectives and viewpoints.',
-      "During those 6 years, I’ve played online poker semi-profesionally to support myself. Studying and playing the game in a serious way taught me a lot about probability, game theory, decision making and managing your own psychology. Who would've guessed how useful these skills would become in the startup world.",
+      "During those 6 years, I’ve played online poker semi-profesionally. Studying and playing the game in a serious way taught me a lot about probability, game theory, decision making and managing your own psychology. Who would've guessed how useful these skills would become in the startup world.",
     ],
   },
   {
