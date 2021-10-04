@@ -20,13 +20,13 @@ heroSub: Some things I've worked on myself and with others
           </div>
           <div class="project__info">
             {% if project.github %}
-              <a href="{{ project.github }}" class="project__git">
+              <a href="{{ project.github }}" class="project__git" aria-label="github repository for {{ project.name }}">
                 {% include 'svg/github.svg' %}
               </a>
             {% endif %}
             <h3>{{ project.name }}</h3>
             {% if project.url %}
-              <a href="{{ project.url }}" class="project__url">{{ project.url }}</a>
+              <a href="{{ project.url }}" class="project__url" aria-label="live project website for {{ project.name }}">{{ project.url }}</a>
             {% endif %}
             <ul class="list-reset">
               {% for tech in project.stack %}
