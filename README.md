@@ -14,9 +14,9 @@ The website was built with [Eleventy](https://www.11ty.dev/), a JS-based static 
 
 ## To dos:
 
-- [ ] Analytics
-- [ ] Optimize for SEO and social media (i.e. `og` and `twitter` meta tags)
-- [ ] Syntax highlighting for code snippets in blog posts
+- [x] Analytics (microanalytics.io)
+- [x] Optimize for SEO and social media (i.e. `og` and `twitter` meta tags)
+- [x] Syntax highlighting for code snippets in blog posts
 - [ ] Store images externally
 - [ ] Automate image processing
 - [ ] Pagination on posts
