@@ -12,12 +12,13 @@ module.exports = (config) => {
   config.addPlugin(pluginSEO, {
     title: 'Pawel Cebula',
     description: 'Web developer and startup founder based in Berlin',
-    url: 'https://pawelcebula.com',
+    url: 'https://www.pawelcebula.com',
     author: 'Pawel Cebula',
     twitter: 'pawelceb',
-    image: '/assets/personalwebsite.png',
+    image: '/assets/profile.jpg',
     options: {
       titleDivider: '|',
+      imageWithBaseUrl: true,
     },
   });
   config.addFilter('dateFilter', dateFilter);
