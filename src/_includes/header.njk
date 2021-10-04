@@ -4,7 +4,7 @@
       <a href="/" class="logo">pawel cebula</a>
     </div>
     <nav class="nav">
-      <button class="nav__toggle">
+      <button class="nav__toggle" aria-label="mobile navigation">
         <span class="nav__toggle__menu">
           {% include 'svg/menu.svg' %}
         </span>
@@ -24,7 +24,7 @@
     {% include 'hero.njk' %}
   {% endif %}
 
-  <script type="text/javascript">
+  <script type="text/javascript" nonce="r@nd0m">
     (function () {
       const navToggle = document.querySelector(".nav__toggle");
       navToggle.addEventListener("click", function(event) {

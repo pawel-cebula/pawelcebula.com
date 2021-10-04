@@ -20,7 +20,7 @@ heroSub: Insights, learnings and notes to self
       {% for post in collections.posts | reverse %}
         {% set tags = post.data.tags %}
         <article class="post__snippet">
-          <a href="/posts/{{ post.data.title | slug }}" class="post__snippet__title">
+          <a href="/posts/{{ post.data.title | slug }}" class="post__snippet__title" aria-label="read article {{ post.data.title }}">
             <h3>{{ post.data.title }}</h3>
           </a>
           <p class="post__snippet__date">Published: {{ post.data.date | dateFilter }} | {{ post | readingTime }} read</p>

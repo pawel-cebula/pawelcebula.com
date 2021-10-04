@@ -244,11 +244,15 @@ footer {
   align-items: center;
   gap: 0.5em;
   font-size: 0.9rem;
-  color: var(--mediumgrey);
+  color: var(--darkgrey);
+}
+
+footer a {
+  display: inline-block;
 }
 
 footer svg {
-  fill: var(--mediumgrey);
+  fill: var(--darkgrey);
 }
 
 /* index */

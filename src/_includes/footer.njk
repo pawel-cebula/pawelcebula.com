@@ -2,7 +2,7 @@
   <p>pawelcebula.com | &copy 2021 |</p>
   <div class="nav__external">
     {% for item in navigation.external %}
-      <a href="{{ item.url }}">
+      <a href="{{ item.url }}" aria-label="{{ item.icon }} profile">
         {% include 'svg/' + item.icon + '.svg' %}
       </a>
     {% endfor %}
