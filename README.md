@@ -5,7 +5,7 @@ This is my first personal website, which includes:
 - Home
 - About me
 - Projects
-- Posts (coming soon)
+- Posts
 - Contact
 
 ## Technology
