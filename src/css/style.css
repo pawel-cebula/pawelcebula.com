@@ -247,6 +247,10 @@ footer {
   color: var(--darkgrey);
 }
 
+footer p {
+  margin-top: 0;
+}
+
 footer a {
   display: inline-block;
 }
