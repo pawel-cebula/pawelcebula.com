@@ -11,7 +11,8 @@ module.exports = (config) => {
   });
   config.addPlugin(pluginSEO, {
     title: 'Pawel Cebula',
-    description: 'Web developer and startup founder based in Berlin',
+    description:
+      "Hi, I'm Pawel, full-stack developer based in Berlin. I love learning and building new things.",
     url: 'https://www.pawelcebula.com',
     author: 'Pawel Cebula',
     twitter: 'pawelceb',
