@@ -8,7 +8,6 @@
     <article 
       class="post__content"
       aria-labelledby="heroHeading"
-      aria-describedby="heroSub heroComment"
     >
       <p class="post__snippet__date">{{ 'Published: ' + date | dateFilter + ' | ' + content | readingTime + ' read' }}</p>
       {% include 'tags.njk' %}
