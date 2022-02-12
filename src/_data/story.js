@@ -24,7 +24,7 @@ module.exports = [
     to: '2021',
     icons: ['startup'],
     description: [
-      'After graduating from university, I decided to move to Berlin to join its growing tech ecosystem. I worked briefly for a well-known angel investor, before founding MEDIGO, with a mission to improve access to quality healthcare globally.',
+      'After graduating from university, I decided to move to Berlin to join its growing tech ecosystem. I worked briefly for a well-known angel investor, before founding Medigo, with a mission to improve access to quality healthcare globally.',
       'We raised funds from some great angels and VCs (i.e. Atlantic Labs, Accel Partners), grew the team to 50+ full-time employees, and helped over 200,000 patients access high quality healthcare across 5 continents.',
       "During those 7 years, as the COO and CCO, I've built up and managed a lot of functional areas that I’ve never dealt with before: operations, business development, marketing, finance, HR and legal. The life of a startup founder is challenging and the learning curve was incredibly steep but I can't imagine a better opportunity to compress a lifetime of experiences and insights into several years.",
     ],
@@ -35,13 +35,13 @@ module.exports = [
     to: 'now',
     icons: ['developer', 'app'],
     description: [
-      'While I’ve learned a ton at MEDIGO, I felt that something was missing and that I had a blind spot. I was curious about the work of our tech team but I had little chance to interact with them on a daily basis.',
+      'While I’ve learned a ton at Medigo, I felt that something was missing and that I had a blind spot. I was curious about the work of our tech team but I had little chance to interact with them on a daily basis.',
       'In 2019, I started learning to code and I’ve not looked back since. After learning some fundamentals of computer science while getting familiar with Python, I’ve decided to focus on web development, initially working with Django, before moving on to the JavaScript ecosystem.',
       'Since mid-2020, I’ve been primarily working with HTML, CSS, React, Node.js, Express, MongoDB and PostgreSQL.',
       "I love learning about new technologies and have recently been exploring TypeScript, Vue.js, GraphQL and TailwindCSS. I'm keen to continue working with a wide range of technologies but I'm also looking forward to go deep on some of the topics.",
       'I’m very thankful for the amazing community resources I’ve had at my disposal, including online courses and tutorials, books, documentation, and very supportive (and generous with their time) developer friends.',
-      'The most powerful learning tool, however, has certainly been working on personal projects, which pushed me out of my comfort zone and exposed me to the challenges and struggles of figuring things out on your own. I’m happy to say that over the time I’ve been able to significantly reduce the frequency with which I’ve been annoying my patient developer friends and instead now rely primarily on documentation, blog posts, tutorials and forums.',
-      "I'm looking forward to continue learning and contributing as part of a team with a strong engineering culture, while utilizing and expanding my development skills in personal projects.",
+      'The most powerful learning tool, however, has certainly been working on personal projects, which pushed me out of my comfort zone and exposed me to the challenges and struggles of figuring things out on your own. I’m happy to say that over the time I’ve been able to significantly reduce the frequency with which I’ve been annoying my patient developer friends and instead now rely primarily on reasoning from first principles or documentation, blog posts, tutorials and forums.',
+      "I'm currently a fullstack software engineer at On Deck, where I'm focused on building tools  that support founders of early stage startups in fundraising.",
     ],
   },
 ];
